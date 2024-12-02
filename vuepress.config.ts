@@ -32,68 +32,25 @@ export default defineUserConfig({
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
     {
-      // 挂载路径
-      mountPath: "/KnapsackToGo4下载",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
-      analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
-        user: "jianjianai",
-        // 仓库所有者的仓库名
-        repository: "KnapsackToGo4"
-      }),
-    },
-    {
-      mountPath: "/",
-      analysis: githubReleasesFilesAnalysis({ user: "jianjianai", repository: "FList" }),
-      // 下载代理配置,支持多个平台，参考:https://jjaw.cn/2024/8/3/flist-config-porxy/
-      // 这个是为了解决github的国内下载慢的问题，和跨域问题，建议配置，不然pdf，txt，md等文件因为跨域无法预览
-      // 如果你使用的不是 cloudflare Pages 部署需要删掉这一行，因为如果不是cloudflare Pages部署，这个代理是无法正常工作的
+      mountPath: "/向量脉络",
+      analysis: githubReleasesFilesAnalysis({ user: "AndersonBY", repository: "vector-vein" }),
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "/test2/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
-        "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
-        "/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
-      }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+      mountPath: "/EcoPaste",
+      analysis: githubReleasesFilesAnalysis({ user: "EcoPasteHub", repository: "EcoPaste" }),
+      downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/huggingface测试",
-      analysis: huggingFaceDatasetsAnalysis({
-        userName: "Open-Orca",
-        datasetsName: "OpenOrca",
-        branchName: "main",
-        path: "/",
-        //最大深度,如果文件夹有很多层最大递归解析多少层，默认10
-        maxDeep: 3
-      }),
+      mountPath: "/Draw.io",
+      analysis: githubReleasesFilesAnalysis({ user: "jgraph", repository: "drawio-desktop" }),
+      downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/gitee测试/发行版",
-      analysis: giteeReleasesFilesAnalysis({
-        user: "jja8",
-        repository: "flist-test",
-        direction: "desc"
-      })
-    },
-    {
-      mountPath: "/gitee测试/仓库",
-      analysis: giteeReposAnalysis({
-        user: "jja8",
-        repository: "flist-test"
-      }),
-    },
-    {
-      mountPath: "/ProgrammingVTuberLogos",
-      analysis: githubReposAnalysis({
-        user: "Aikoyori",
-        repository: "ProgrammingVTuberLogos",
-      }),
-      downProxy: cloudflarePagesDownProxy()
-    },
+      mountPath: "/Dbeaver",
+      analysis: githubReleasesFilesAnalysis({ user: "dbeaver", repository: "dbeaver" }),
+      downProxy: cloudflarePagesDownProxy(),
+    }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
