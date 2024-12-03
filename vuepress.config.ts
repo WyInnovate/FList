@@ -50,6 +50,11 @@ export default defineUserConfig({
       mountPath: "/Dbeaver",
       analysis: githubReleasesFilesAnalysis({ user: "dbeaver", repository: "dbeaver" }),
       downProxy: cloudflarePagesDownProxy(),
+    },
+    {
+      mountPath: "/思源笔记",
+      analysis: githubReleasesFilesAnalysis({ user: "siyuan-note", repository: "siyuan" }),
+      downProxy: cloudflarePagesDownProxy(),
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
