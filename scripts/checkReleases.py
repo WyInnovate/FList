@@ -8,8 +8,8 @@ STATE_FILE = "release_state.json"
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from dotenv import load_dotenv
-from utils.qywechat_notify import send_wechat_notification
-from utils.qmsg_notify import send_qmsg_notification
+# from utils.qywechat_notify import send_wechat_notification
+# from utils.qmsg_notify import send_qmsg_notification
 from utils.serve_chan_notify import send_server_chan_notification
 
 # 仅在本地环境中加载 .env 文件
