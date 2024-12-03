@@ -15,6 +15,7 @@ export interface GithubRepository {
     per_page?: number
 }
 
+
 /**
  * 从GitHub仓库的releases中解析文件信息
  * */
@@ -40,9 +41,11 @@ export function giteeReleasesFilesAnalysis(config: GithubRepository): Analysis {
         } catch (e) {
             throw new Error("Gitee Api 请求失败! 请检查网络是否畅通。" + e);
         }
+        
         if (!tagInfo.ok) {
             throw new Error("仓库名称或者用户名错误，或者达到Gitee速率限制,详细信息:" + tagInfo.status + " " + tagInfo.statusText + " " + tagInfo.url + " " + await tagInfo.text());
         }
+        
         const jsonData = await tagInfo.json() as {
             tag_name: string,
             name: string,
@@ -53,7 +56,13 @@ export function giteeReleasesFilesAnalysis(config: GithubRepository): Analysis {
                 name: string,
             }[]
         }[];
+
+        let count = 0;
         for(const {tag_name,name,body,created_at,assets} of jsonData){
+            if (count >= 10) {
+	            break;
+	        }
+            
             const tagFolder:Folder = {
                 title:name,
                 content:body,
@@ -62,6 +71,7 @@ export function giteeReleasesFilesAnalysis(config: GithubRepository): Analysis {
                 size:0,
                 name:"giteeReleasesTagRoot"
             };
+            
             for(const {browser_download_url,name} of assets){
                 joinFile(tagFolder,{
                     downloadUrl:browser_download_url,
@@ -70,13 +80,16 @@ export function giteeReleasesFilesAnalysis(config: GithubRepository): Analysis {
                     downloadCorsAllow: "loose", 
                 });
             }
+            
             let tagPath:string = tag_name;
             if(tagPath=="root"){
                 tagPath = "";
             }
+            
             if(tagPath.startsWith("root/")){
                 tagPath = tagPath.substring(5);
             }
+            
             if(tagPath){
                 const pathArray= tagPath.split("/");
                 tagFolder.name = pathArray.pop()!;
@@ -84,6 +97,8 @@ export function giteeReleasesFilesAnalysis(config: GithubRepository): Analysis {
             }else {
                 abFolders(fileTree,tagFolder);
             }
+
+            count++;
         }
         return fileTree;
     };
