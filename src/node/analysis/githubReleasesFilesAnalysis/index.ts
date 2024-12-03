@@ -11,6 +11,7 @@ export interface GithubRepository {
     authorizationToken?: string
 }
 
+
 /**
  * 从GitHub仓库的releases中解析文件信息
  * */
@@ -28,9 +29,11 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
     } catch (e) {
         throw new Error("Github Api 请求失败! 请检查网络是否畅通。" + e);
     }
+    
     if (!tagInfo.ok) {
         throw new Error("仓库名称或者用户名错误，或者达到GitHub速率限制,详细信息:" + tagInfo.status + " " + tagInfo.statusText + " " + tagInfo.url + " " + await tagInfo.text());
     }
+    
     const jsonData = await tagInfo.json() as {
         tag_name: string,
         name: string,
@@ -44,7 +47,13 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
             content_type: string
         }[]
     }[];
+
+    let count = 0;
     for (const { tag_name, name, body, published_at, assets } of jsonData) {
+	    if (count >= 10) {
+	        break;
+	    }
+        
         const tagFolder: Folder = {
             title: name,
             content: body,
@@ -53,6 +62,7 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
             size: 0,
             name: "githubReleasesTagRoot"
         };
+        
         for (const { browser_download_url, size, name, updated_at, content_type } of assets) {
             joinFile(tagFolder, {
                 downloadUrl: browser_download_url,
@@ -63,6 +73,7 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
                 downloadCorsAllow: "loose", 
             });
         }
+        
         let tagPath: string = tag_name;
         if (tagPath == "root") {
             tagPath = "";
@@ -77,6 +88,8 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
         } else {
             abFolders(fileTree, tagFolder);
         }
+
+	    count++;
     }
     return fileTree;
 }
