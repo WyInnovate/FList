@@ -83,7 +83,7 @@ def main():
         print(notify_content)
         
         # 使用 Server酱发送通知
-        # send_server_chan_notification('Check Github Release', notify_content)
+        send_server_chan_notification('Check Github Release', notify_content)
 
         with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
             f.write("notify=New\n")
