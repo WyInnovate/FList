@@ -26,7 +26,6 @@ export function createFilePage(app: App, path: string, file: File): Promise<Page
             content: file.content,
         },
     }
-    // console.log(path, 123456)
     return createPage(app, {
         path: path,
         frontmatter: frontmatter
@@ -62,7 +61,7 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
     // 去除 <p> 标签的内容
     const cleanedContent = content.replace(/<p[^>]*>.*?<\/p>/gs, '');
 
-    console.log(cleanedContent, 123456)
+    // console.log(cleanedContent, 123456)
     
     const frontmatter: FolderPageFrontmatter = {
         layout: 'Folder',
@@ -76,7 +75,6 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
             content: cleanedContent,
         },
     }
-    // console.log(path, 123456)
     return createPage(app, {
         path: path,
         frontmatter: frontmatter,
