@@ -39,5 +39,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add release_state.json
-          git commit -m "Update release state for [skip ci]"
+          git commit -m "检查到Github Release有更新，触发重新部署FList"
           git push
