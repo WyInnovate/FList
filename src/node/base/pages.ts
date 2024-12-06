@@ -59,6 +59,8 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
         }
     })
 
+    console.log(folder, 123456)
+    
     // 检查 folder.content 是否为 undefined，如果是则设置为空字符串
     const content = folder.content || '';
     // 去除 <p> 标签的内容
