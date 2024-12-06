@@ -2,7 +2,7 @@ name: Github Release Check
 
 on:
   schedule:
-    - cron: "30 0 * * *"  # UTC 时间 0:30 AM 相当于 UTC+8 的 8:30 AM
+    - cron: "30 23 * * *"  # UTC 时间 23:30 PM 相当于 UTC+8 的 7:30 AM
   workflow_dispatch: # 允许手动触发工作流程
 
 jobs:
