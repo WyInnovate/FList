@@ -1,7 +1,7 @@
 {
   "AndersonBY/vector-vein": "v0.3.3",
-  "EcoPasteHub/EcoPaste": "v0.4.0",
+  "EcoPasteHub/EcoPaste": "v0.5.0-beta.1",
   "jgraph/drawio-desktop": "v25.0.2",
   "dbeaver/dbeaver": "24.3.0",
-  "siyuan-note/siyuan": "v3.1.14"
+  "siyuan-note/siyuan": "v3.1.15-dev1"
 }
