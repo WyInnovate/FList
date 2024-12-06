@@ -58,6 +58,10 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
             isFolder: true
         }
     })
+
+    // 去除 <p> 标签的内容
+    const cleanedContent = folder.content.replace(/<p[^>]*>.*?<\/p>/gi, '');
+    
     const frontmatter: FolderPageFrontmatter = {
         layout: 'Folder',
         title: folder.title,
@@ -67,7 +71,7 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
             updateTime: folder.updateTime,
             children: childrenData,
             isFolder: true,
-            content: folder.content,
+            content: cleanedContent,
         },
     }
     console.log(path, 123456)
