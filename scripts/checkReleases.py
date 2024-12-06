@@ -95,7 +95,10 @@ def main():
         with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
             f.write("notify=New\n")
     else:
-        print("没有新发布！")
+        print("今天没检测到关注的Github仓库有新发布！")
+
+        # 使用 Server酱发送通知
+        send_server_chan_notification('Check Github Release', "今天没检测到关注的Github仓库有新发布！")
 
 if __name__ == "__main__":
     main()
