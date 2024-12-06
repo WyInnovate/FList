@@ -26,9 +26,9 @@ def save_state(state_file: str, state: dict):
     with open(state_file, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
 
-def get_latest_release(repo: str, token: str = None) -> dict:
+def get_all_releases(repo: str, token: str = None) -> list:
     owner, repo_name = repo.split("/")
-    url = f"https://api.github.com/repos/{owner}/{repo_name}/releases/latest"
+    url = f"https://api.github.com/repos/{owner}/{repo_name}/releases"
     headers = {
         "Accept": "application/vnd.github.v3+json",
         "User-Agent": "GitHub-Release-Checker",
@@ -41,6 +41,13 @@ def get_latest_release(repo: str, token: str = None) -> dict:
     else:
         print(f"无法获取仓库 {repo} 的发布信息。状态码：{response.status_code}")
         return None
+
+def get_latest_release(repo: str, token: str = None) -> dict:
+    releases = get_all_releases(repo, token)
+    if not releases:
+        return None
+    # 最新的发布通常是列表中的第一个元素
+    return releases[0] if releases else None
 
 def parse_repos(repos_env: str) -> List[str]:
     repos = [repo.strip() for repo in repos_env.split(",") if repo.strip()]
