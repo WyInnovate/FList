@@ -8,8 +8,6 @@ import {
 import { App, createPage, Page } from "vuepress";
 import { File, Folder, isFile } from "./files.js";
 
-
-
 /**
  * 给文件创建页面
  * */
@@ -28,7 +26,7 @@ export function createFilePage(app: App, path: string, file: File): Promise<Page
             content: file.content,
         },
     }
-    console.log(path, 123456)
+    // console.log(path, 123456)
     return createPage(app, {
         path: path,
         frontmatter: frontmatter
@@ -59,12 +57,12 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
         }
     })
 
-    console.log(folder, 123456)
-    
     // 检查 folder.content 是否为 undefined，如果是则设置为空字符串
     const content = folder.content || '';
     // 去除 <p> 标签的内容
     const cleanedContent = content.replace(/<p[^>]*>.*?<\/p>/gi, '');
+
+    console.log(cleanedContent, 123456)
     
     const frontmatter: FolderPageFrontmatter = {
         layout: 'Folder',
@@ -78,13 +76,12 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
             content: cleanedContent,
         },
     }
-    console.log(path, 123456)
+    // console.log(path, 123456)
     return createPage(app, {
         path: path,
         frontmatter: frontmatter,
     })
 }
-
 
 function createFileTreePagesInner(app: App, path: string, folder: Folder): Promise<Page>[] {
     const pagePromiseList: Promise<Page>[] = [];
