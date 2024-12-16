@@ -33,28 +33,23 @@ export default defineUserConfig({
   theme: FileList([
     {
       mountPath: "/向量脉络",
-      analysis: githubReleasesFilesAnalysis({ user: "AndersonBY", repository: "vector-vein" }),
-      downProxy: cloudflarePagesDownProxy(),
+      analysis: githubReleasesFilesAnalysis({ user: "AndersonBY", repository: "vector-vein" })
     },
     {
       mountPath: "/EcoPaste",
-      analysis: githubReleasesFilesAnalysis({ user: "EcoPasteHub", repository: "EcoPaste" }),
-      downProxy: cloudflarePagesDownProxy(),
+      analysis: githubReleasesFilesAnalysis({ user: "EcoPasteHub", repository: "EcoPaste" })
     },
     {
       mountPath: "/Draw.io",
-      analysis: githubReleasesFilesAnalysis({ user: "jgraph", repository: "drawio-desktop" }),
-      downProxy: cloudflarePagesDownProxy(),
+      analysis: githubReleasesFilesAnalysis({ user: "jgraph", repository: "drawio-desktop" })
     },
     {
       mountPath: "/Dbeaver",
-      analysis: githubReleasesFilesAnalysis({ user: "dbeaver", repository: "dbeaver" }),
-      downProxy: cloudflarePagesDownProxy(),
+      analysis: githubReleasesFilesAnalysis({ user: "dbeaver", repository: "dbeaver" })
     },
     {
       mountPath: "/思源笔记",
-      analysis: githubReleasesFilesAnalysis({ user: "siyuan-note", repository: "siyuan" }),
-      downProxy: cloudflarePagesDownProxy(),
+      analysis: githubReleasesFilesAnalysis({ user: "siyuan-note", repository: "siyuan" })
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
