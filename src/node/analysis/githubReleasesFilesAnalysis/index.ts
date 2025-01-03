@@ -64,14 +64,17 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
         };
         
         for (const { browser_download_url, size, name, updated_at, content_type } of assets) {
-            joinFile(tagFolder, {
-                downloadUrl: browser_download_url,
-                updateTime: new Date(updated_at).getTime(),
-                size: size,
-                contentType: content_type,
-                name: name,
-                downloadCorsAllow: "loose", 
-            });
+	    const proxyUrl = process.env.PROXY_URL || '';
+	    const proxiedDownloadUrl = proxyUrl ? `${proxyUrl}${browser_download_url}` : browser_download_url;
+	
+	    joinFile(tagFolder, {
+		downloadUrl: proxiedDownloadUrl,
+		updateTime: new Date(updated_at).getTime(),
+		size: size,
+		contentType: content_type,
+		name: name,
+		downloadCorsAllow: "loose", 
+	    });
         }
         
         let tagPath: string = tag_name;
