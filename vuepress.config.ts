@@ -50,6 +50,34 @@ export default defineUserConfig({
     {
       mountPath: "/思源笔记",
       analysis: githubReleasesFilesAnalysis({ user: "siyuan-note", repository: "siyuan" })
+    },
+    {
+      mountPath: "/CherryStudio",
+      analysis: githubReleasesFilesAnalysis({ user: "CherryHQ", repository: "cherry-studio" })
+    },
+    {
+      mountPath: "/vLLM",
+      analysis: githubReleasesFilesAnalysis({ user: "vllm-project", repository: "vllm" })
+    },
+    {
+      mountPath: "/Heynote",
+      analysis: githubReleasesFilesAnalysis({ user: "heyman", repository: "heynote" })
+    },
+    {
+      mountPath: "/Linkding",
+      analysis: githubReleasesFilesAnalysis({ user: "sissbruecker", repository: "linkding" })
+    },
+    {
+      mountPath: "/Blinko",
+      analysis: githubReleasesFilesAnalysis({ user: "blinko-space", repository: "blinko" })
+    },
+    {
+      mountPath: "/FastGPT",
+      analysis: githubReleasesFilesAnalysis({ user: "labring", repository: "FastGPT" })
+    },
+    {
+      mountPath: "/Karing",
+      analysis: githubReleasesFilesAnalysis({ user: "KaringX", repository: "karing" })
     }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
