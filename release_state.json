@@ -3,12 +3,12 @@
   "EcoPasteHub/EcoPaste": "v0.5.0",
   "jgraph/drawio-desktop": "v26.2.2",
   "dbeaver/dbeaver": "25.0.2",
-  "siyuan-note/siyuan": "v3.1.27",
+  "siyuan-note/siyuan": "v3.1.28-dev2",
   "CherryHQ/cherry-studio": "v1.2.4",
   "vllm-project/vllm": "v0.8.4",
   "heyman/heynote": "v2.1.4",
   "sissbruecker/linkding": "v1.39.1",
   "blinko-space/blinko": "v0.52.3",
-  "labring/FastGPT": "v4.9.5",
+  "labring/FastGPT": "v4.9.6-alpha",
   "KaringX/karing": "v1.1.2.606"
 }
