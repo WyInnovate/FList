@@ -4,11 +4,11 @@
   "jgraph/drawio-desktop": "v26.2.15",
   "dbeaver/dbeaver": "25.0.3",
   "siyuan-note/siyuan": "v3.1.29-dev3",
-  "CherryHQ/cherry-studio": "v1.2.9",
+  "CherryHQ/cherry-studio": "v1.2.10",
   "vllm-project/vllm": "v0.8.5",
   "heyman/heynote": "v2.2.1",
   "sissbruecker/linkding": "v1.39.1",
-  "blinko-space/blinko": "1.0.0-beta.1",
-  "labring/FastGPT": "v4.9.7-fix",
-  "KaringX/karing": "v1.1.3.700"
+  "blinko-space/blinko": "1.0.0-beta.2",
+  "labring/FastGPT": "v4.9.7-fix2",
+  "KaringX/karing": "v1.1.3.702"
 }
