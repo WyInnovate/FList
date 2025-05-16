@@ -4,11 +4,11 @@
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "25.0.4",
   "siyuan-note/siyuan": "v3.1.29",
-  "CherryHQ/cherry-studio": "v1.3.3",
+  "CherryHQ/cherry-studio": "v1.3.4",
   "vllm-project/vllm": "v0.9.0",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.39.1",
   "blinko-space/blinko": "1.0.0-beta.5",
   "labring/FastGPT": "v4.9.9-alpha",
-  "KaringX/karing": "v1.1.3.705"
+  "KaringX/karing": "v1.1.3.706"
 }
