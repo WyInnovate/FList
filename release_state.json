@@ -12,6 +12,6 @@
   "labring/FastGPT": "v4.9.9",
   "KaringX/karing": "v1.1.3.706",
   "MartialBE/one-hub": "v0.14.17",
-  "rime/weasel": "0.17.0",
+  "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.5"
 }
