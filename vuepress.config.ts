@@ -32,18 +32,6 @@ export default defineUserConfig({
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
     {
-      mountPath: "/向量脉络",
-      analysis: githubReleasesFilesAnalysis({ user: "AndersonBY", repository: "vector-vein" })
-    },
-    {
-      mountPath: "/EcoPaste",
-      analysis: githubReleasesFilesAnalysis({ user: "EcoPasteHub", repository: "EcoPaste" })
-    },
-    {
-      mountPath: "/Draw.io",
-      analysis: githubReleasesFilesAnalysis({ user: "jgraph", repository: "drawio-desktop" })
-    },
-    {
       mountPath: "/Dbeaver",
       analysis: githubReleasesFilesAnalysis({ user: "dbeaver", repository: "dbeaver" })
     },
@@ -60,20 +48,20 @@ export default defineUserConfig({
       analysis: githubReleasesFilesAnalysis({ user: "vllm-project", repository: "vllm" })
     },
     {
-      mountPath: "/Heynote",
-      analysis: githubReleasesFilesAnalysis({ user: "heyman", repository: "heynote" })
-    },
-    {
-      mountPath: "/Linkding",
-      analysis: githubReleasesFilesAnalysis({ user: "sissbruecker", repository: "linkding" })
-    },
-    {
-      mountPath: "/Blinko",
-      analysis: githubReleasesFilesAnalysis({ user: "blinko-space", repository: "blinko" })
-    },
-    {
       mountPath: "/FastGPT",
       analysis: githubReleasesFilesAnalysis({ user: "labring", repository: "FastGPT" })
+    },
+    {
+      mountPath: "/OneHub",
+      analysis: githubReleasesFilesAnalysis({ user: "MartialBE", repository: "one-hub" })
+    },
+    {
+      mountPath: "/Rime小狼毫",
+      analysis: githubReleasesFilesAnalysis({ user: "rime", repository: "weasel" })
+    },
+    {
+      mountPath: "/白霜拼音",
+      analysis: githubReleasesFilesAnalysis({ user: "gaboolic", repository: "rime-frost" })
     },
     {
       mountPath: "/Karing",
