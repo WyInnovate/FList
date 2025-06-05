@@ -55,9 +55,10 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
             isFolder: true
         }
     })
-
-    childrenData = childrenData.sort((a, b) => {
-    return new Date(b.updateTime).getTime() - new Date(a.updateTime).getTime();
+    .sort((a, b) => {
+        const timeA = a.updateTime ? new Date(a.updateTime).getTime() : 0;
+        const timeB = b.updateTime ? new Date(b.updateTime).getTime() : 0;
+        return timeB - timeA;
     });
 
     // 检查 folder.content 是否为 undefined，如果是则设置为空字符串
