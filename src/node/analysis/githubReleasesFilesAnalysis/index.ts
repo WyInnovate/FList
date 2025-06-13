@@ -64,7 +64,7 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
         };
         
         for (const { browser_download_url, size, name, updated_at, content_type } of assets) {
-	    const proxiedDownloadUrl = `https://gh-proxy.com/${browser_download_url}`;
+	    const proxiedDownloadUrl = `${browser_download_url}`;
 		
 	    joinFile(tagFolder, {
 		downloadUrl: proxiedDownloadUrl,
