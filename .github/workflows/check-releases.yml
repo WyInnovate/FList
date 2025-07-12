@@ -26,7 +26,7 @@ jobs:
       - name: Run release checker
         id: release_checker
         env:
-          GITHUB_TOKEN: ${{ secrets.REPOS_TOKEN }}
+          REPOS_TOKEN: ${{ secrets.REPOS_TOKEN }}
           REPOS: ${{ vars.REPOS }}  # 将 REPOS 环境变量传递给 Python 脚本
           SERVER_CHAN_KEY: ${{ secrets.SERVER_CHAN_KEY }}
           SERVER_CHAN_CHANNEL: ${{secrets.SERVER_CHAN_CHANNEL}}
