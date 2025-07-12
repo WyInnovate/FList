@@ -60,6 +60,7 @@ def main():
     webhook_url = os.getenv('WEBHOOK_URL')
     repos = parse_repos(repos_env)
     notify_messages: List[str] = []
+    error_messages: List[str] = []
 
     if not repos:
         print("没有定义要监控的仓库（REPOS 环境变量为空）。")
@@ -68,14 +69,17 @@ def main():
     for repo in repos:
         if '/' not in repo:
             print(f"仓库名称格式错误（应为 owner/repo）：{repo}")
+            error_messages.append(f"- 仓库名称格式错误（应为 owner/repo）：{repo}")
             continue
         release = get_latest_release(repo, token)
         if not release:
+            error_messages.append(f"- 无法获取仓库 {repo} 的发布信息（可能被限制访问）")
             continue
 
         tag = release.get("tag_name")
         html_url = release.get("html_url")
         if not tag or not html_url:
+            error_messages.append(f"- 仓库 {repo} 的发布信息格式不正确")
             continue
 
         previous_tag = state.get(repo)
@@ -85,20 +89,25 @@ def main():
 
     save_state(STATE_FILE, state)
 
+    final_message = ""
     if notify_messages:
-        notify_content = "\n".join(notify_messages)
-        print(notify_content)
-        
-        # 使用 Server酱发送通知
-        send_server_chan_notification('Check Github Release', notify_content)
+        final_message += "🎉 检测到以下仓库有新发布：\n"
+        final_message += "\n".join(notify_messages)
+    
+    if error_messages:
+        if final_message:
+            final_message += "\n\n"
+        final_message += "⚠️ 检测到以下错误：\n"
+        final_message += "\n".join(error_messages)
+    
+    if not final_message:
+        final_message = "今天没检测到关注的Github仓库有新发布！"
 
-        with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
-            f.write("notify=New\n")
-    else:
-        print("今天没检测到关注的Github仓库有新发布！")
+    print(final_message)
+    send_server_chan_notification('Check Github Release', final_message)
 
-        # 使用 Server酱发送通知
-        send_server_chan_notification('Check Github Release', "今天没检测到关注的Github仓库有新发布！")
+    with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
+        f.write(f"notify={'New' if notify_messages else 'None'}\n")
 
 if __name__ == "__main__":
     main()
