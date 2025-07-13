@@ -107,7 +107,7 @@ def main():
     send_server_chan_notification('Check Github Release', final_message)
 
     with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
-        f.write(f"notify={'New' if notify_messages else 'None'}\n")
+        f.write("notify=New\n")
 
 if __name__ == "__main__":
     main()
