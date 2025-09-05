@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "30 23 * * *"  # UTC 时间 23:30 PM 相当于 UTC+8 的 7:30 AM
   workflow_dispatch: # 允许手动触发工作流程
+  repository_dispatch: # 添加这一行，允许外部 Webhook 触发
+    types: [check-release] # 定义事件类型，可以自定义名称
 
 jobs:
   check-releases:
