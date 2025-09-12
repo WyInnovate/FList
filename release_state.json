@@ -3,8 +3,8 @@
   "EcoPasteHub/EcoPaste": "v0.5.0",
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "25.2.0",
-  "siyuan-note/siyuan": "v3.3.2",
-  "CherryHQ/cherry-studio": "v1.5.10",
+  "siyuan-note/siyuan": "v3.3.3-dev1",
+  "CherryHQ/cherry-studio": "v1.5.11",
   "vllm-project/vllm": "v0.10.1.1",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
@@ -13,5 +13,7 @@
   "KaringX/karing": "v1.2.4.864",
   "MartialBE/one-hub": "v0.14.23",
   "rime/weasel": "latest",
-  "gaboolic/rime-frost": "0.0.6"
+  "gaboolic/rime-frost": "0.0.6",
+  "tbphp/gpt-load": "v1.1.0",
+  "Wangnov/uv-custom": "0.8.17"
 }
