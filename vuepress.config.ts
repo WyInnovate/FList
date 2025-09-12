@@ -52,16 +52,16 @@ export default defineUserConfig({
       analysis: githubReleasesFilesAnalysis({ user: "labring", repository: "FastGPT" })
     },
     {
-      mountPath: "/OneHub",
-      analysis: githubReleasesFilesAnalysis({ user: "MartialBE", repository: "one-hub" })
+      mountPath: "/GPT-Load",
+      analysis: githubReleasesFilesAnalysis({ user: "tbphp", repository: "gpt-load" })
     },
     {
       mountPath: "/Rime小狼毫",
       analysis: githubReleasesFilesAnalysis({ user: "rime", repository: "weasel" })
     },
     {
-      mountPath: "/白霜拼音",
-      analysis: githubReleasesFilesAnalysis({ user: "gaboolic", repository: "rime-frost" })
+      mountPath: "/UV",
+      analysis: githubReleasesFilesAnalysis({ user: "Wangnov", repository: "uv-custom" })
     },
     {
       mountPath: "/Karing",
