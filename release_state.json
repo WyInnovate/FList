@@ -14,6 +14,6 @@
   "MartialBE/one-hub": "v0.14.23",
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
-  "tbphp/gpt-load": "v1.3.0-beta.4",
-  "Wangnov/uv-custom": "0.8.22"
+  "tbphp/gpt-load": "v1.3.0-beta.5",
+  "Wangnov/uv-custom": "0.8.23"
 }
