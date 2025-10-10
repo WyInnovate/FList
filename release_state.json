@@ -5,7 +5,7 @@
   "dbeaver/dbeaver": "25.2.2",
   "siyuan-note/siyuan": "v3.3.5-dev1",
   "CherryHQ/cherry-studio": "v1.6.3",
-  "vllm-project/vllm": "v0.10.2",
+  "vllm-project/vllm": "v0.11.0",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
   "blinko-space/blinko": "1.0.0-rc.1",
@@ -15,5 +15,5 @@
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.3.0",
-  "Wangnov/uv-custom": "0.9.1"
+  "Wangnov/uv-custom": "0.9.2"
 }
