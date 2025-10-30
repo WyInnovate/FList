@@ -10,10 +10,10 @@
   "sissbruecker/linkding": "v1.40.0",
   "blinko-space/blinko": "1.0.0-rc.1",
   "labring/FastGPT": "v4.13.2",
-  "KaringX/karing": "v1.2.5.880",
+  "KaringX/karing": "v1.2.5.881",
   "MartialBE/one-hub": "v0.14.23",
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.3.2",
-  "Wangnov/uv-custom": "0.9.6"
+  "Wangnov/uv-custom": "0.9.7"
 }
