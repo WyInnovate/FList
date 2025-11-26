@@ -4,16 +4,16 @@
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "25.2.5",
   "siyuan-note/siyuan": "v3.4.1",
-  "CherryHQ/cherry-studio": "v1.7.0-rc.2",
+  "CherryHQ/cherry-studio": "v1.7.0-rc.3",
   "vllm-project/vllm": "v0.11.2",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
   "blinko-space/blinko": "1.0.0-rc.1",
-  "labring/FastGPT": "v4.14.2-fix",
-  "KaringX/karing": "v1.2.9.1200",
+  "labring/FastGPT": "v4.14.3",
+  "KaringX/karing": "v1.2.9.1201",
   "MartialBE/one-hub": "v0.14.23",
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.1",
-  "Wangnov/uv-custom": "0.9.12"
+  "Wangnov/uv-custom": "0.9.13"
 }
