@@ -3,17 +3,17 @@
   "EcoPasteHub/EcoPaste": "v0.5.0",
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "25.3.1",
-  "siyuan-note/siyuan": "v3.5.2-dev2",
+  "siyuan-note/siyuan": "v3.5.2",
   "CherryHQ/cherry-studio": "v1.7.8",
   "vllm-project/vllm": "v0.13.0",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
   "blinko-space/blinko": "1.0.0-rc.1",
   "labring/FastGPT": "v4.14.4-cve",
-  "KaringX/karing": "v1.2.10.1305",
+  "KaringX/karing": "v1.2.10.1306",
   "MartialBE/one-hub": "v0.14.23",
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.1",
-  "Wangnov/uv-custom": "0.9.20"
+  "Wangnov/uv-custom": "0.9.21"
 }
