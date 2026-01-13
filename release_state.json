@@ -3,7 +3,7 @@
   "EcoPasteHub/EcoPaste": "v0.5.0",
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "25.3.2",
-  "siyuan-note/siyuan": "v3.5.3-dev6",
+  "siyuan-note/siyuan": "v3.5.3",
   "CherryHQ/cherry-studio": "v1.7.13",
   "vllm-project/vllm": "v0.13.0",
   "heyman/heynote": "v2.2.2",
@@ -15,5 +15,5 @@
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.1",
-  "Wangnov/uv-custom": "0.9.24"
+  "Wangnov/uv-custom": "0.9.25"
 }
