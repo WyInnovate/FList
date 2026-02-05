@@ -4,7 +4,7 @@
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "25.3.4",
   "siyuan-note/siyuan": "v3.5.4",
-  "CherryHQ/cherry-studio": "v1.7.15",
+  "CherryHQ/cherry-studio": "v1.7.16",
   "vllm-project/vllm": "v0.15.1",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
@@ -15,5 +15,5 @@
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.2",
-  "Wangnov/uv-custom": "0.9.30"
+  "Wangnov/uv-custom": "0.10.0"
 }
