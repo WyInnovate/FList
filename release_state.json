@@ -15,5 +15,10 @@
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.3",
-  "Wangnov/uv-custom": "0.10.2"
+  "Wangnov/uv-custom": "0.10.2",
+  "lbjlaq/Antigravity-Manager": "v4.1.15",
+  "Opencode-DCP/opencode-dynamic-context-pruning": "v2.1.3",
+  "code-yeongyu/oh-my-opencode": "v3.5.2",
+  "sgl-project/sglang": "v0.5.8",
+  "lobehub/lobehub": "v2.1.28"
 }
