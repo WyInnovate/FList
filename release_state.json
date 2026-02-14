@@ -3,8 +3,8 @@
   "EcoPasteHub/EcoPaste": "v0.5.0",
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "25.3.4",
-  "siyuan-note/siyuan": "v3.5.6",
-  "CherryHQ/cherry-studio": "v1.7.18",
+  "siyuan-note/siyuan": "v3.5.7",
+  "CherryHQ/cherry-studio": "v1.7.19",
   "vllm-project/vllm": "v0.16.0",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
@@ -16,9 +16,9 @@
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.3",
   "Wangnov/uv-custom": "0.10.2",
-  "lbjlaq/Antigravity-Manager": "v4.1.17",
+  "lbjlaq/Antigravity-Manager": "v4.1.18",
   "Opencode-DCP/opencode-dynamic-context-pruning": "v2.1.3",
   "code-yeongyu/oh-my-opencode": "v3.5.3",
   "sgl-project/sglang": "v0.5.8",
-  "lobehub/lobehub": "v2.2.0-canary.202602131631"
+  "lobehub/lobehub": "v2.2.0-nightly.202602140618"
 }
