@@ -15,10 +15,10 @@
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.4",
-  "Wangnov/uv-custom": "0.10.3",
-  "lbjlaq/Antigravity-Manager": "v4.1.20",
+  "Wangnov/uv-custom": "0.10.4",
+  "lbjlaq/Antigravity-Manager": "v4.1.21",
   "Opencode-DCP/opencode-dynamic-context-pruning": "v2.1.3",
-  "code-yeongyu/oh-my-opencode": "v3.6.0",
+  "code-yeongyu/oh-my-opencode": "v3.7.2",
   "sgl-project/sglang": "v0.5.8",
-  "lobehub/lobehub": "v2.2.0-nightly.202602160630"
+  "lobehub/lobehub": "v2.2.0-nightly.202602170627"
 }
