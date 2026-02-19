@@ -17,8 +17,8 @@
   "tbphp/gpt-load": "v1.4.4",
   "Wangnov/uv-custom": "0.10.4",
   "lbjlaq/Antigravity-Manager": "v4.1.21",
-  "Opencode-DCP/opencode-dynamic-context-pruning": "v2.1.5",
+  "Opencode-DCP/opencode-dynamic-context-pruning": "v2.1.6",
   "code-yeongyu/oh-my-opencode": "v3.7.4",
   "sgl-project/sglang": "v0.5.8",
-  "lobehub/lobehub": "v2.2.0-nightly.202602170627"
+  "lobehub/lobehub": "v2.1.31-canary.3"
 }
