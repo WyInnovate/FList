@@ -10,15 +10,15 @@
   "sissbruecker/linkding": "v1.40.0",
   "blinko-space/blinko": "1.0.0-rc.1",
   "labring/FastGPT": "v4.14.7.2",
-  "KaringX/karing": "v1.2.15.1804",
+  "KaringX/karing": "v1.2.15.1806",
   "MartialBE/one-hub": "v0.14.23",
   "rime/weasel": "latest",
   "gaboolic/rime-frost": "0.0.6",
   "tbphp/gpt-load": "v1.4.4",
-  "Wangnov/uv-custom": "0.10.7",
-  "lbjlaq/Antigravity-Manager": "v4.1.27",
-  "Opencode-DCP/opencode-dynamic-context-pruning": "v2.2.6-beta0",
+  "Wangnov/uv-custom": "0.10.8",
+  "lbjlaq/Antigravity-Manager": "v4.1.28",
+  "Opencode-DCP/opencode-dynamic-context-pruning": "v2.2.8-beta0",
   "code-yeongyu/oh-my-opencode": "v3.10.0",
   "sgl-project/sglang": "v0.5.9",
-  "lobehub/lobehub": "v2.2.0-nightly.202603020624"
+  "lobehub/lobehub": "v2.2.0-nightly.202603030621"
 }
