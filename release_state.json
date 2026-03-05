@@ -4,7 +4,7 @@
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "26.0.0",
   "siyuan-note/siyuan": "v3.5.9",
-  "CherryHQ/cherry-studio": "v1.7.23",
+  "CherryHQ/cherry-studio": "v1.7.24",
   "vllm-project/vllm": "v0.16.0",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
@@ -20,5 +20,5 @@
   "Opencode-DCP/opencode-dynamic-context-pruning": "v2.2.8-beta0",
   "code-yeongyu/oh-my-opencode": "v3.10.0",
   "sgl-project/sglang": "v0.5.9",
-  "lobehub/lobehub": "v2.1.36-canary.4"
+  "lobehub/lobehub": "v2.2.0-nightly.202603050634"
 }
