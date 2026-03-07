@@ -5,7 +5,7 @@
   "dbeaver/dbeaver": "26.0.0",
   "siyuan-note/siyuan": "v3.5.9",
   "CherryHQ/cherry-studio": "v1.7.24",
-  "vllm-project/vllm": "v0.16.0",
+  "vllm-project/vllm": "v0.17.0",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
   "blinko-space/blinko": "1.0.0-rc.1",
@@ -18,7 +18,7 @@
   "Wangnov/uv-custom": "0.10.9",
   "lbjlaq/Antigravity-Manager": "v4.1.28",
   "Opencode-DCP/opencode-dynamic-context-pruning": "v2.2.8-beta0",
-  "code-yeongyu/oh-my-opencode": "v3.10.0",
+  "code-yeongyu/oh-my-opencode": "v3.11.1",
   "sgl-project/sglang": "v0.5.9",
-  "lobehub/lobehub": "v2.2.0-nightly.202603060620"
+  "lobehub/lobehub": "v2.1.39-canary.3"
 }
