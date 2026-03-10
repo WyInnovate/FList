@@ -3,7 +3,7 @@
   "EcoPasteHub/EcoPaste": "v0.5.0",
   "jgraph/drawio-desktop": "v27.0.5",
   "dbeaver/dbeaver": "26.0.0",
-  "siyuan-note/siyuan": "v3.5.9",
+  "siyuan-note/siyuan": "v3.5.10",
   "CherryHQ/cherry-studio": "v1.7.24",
   "vllm-project/vllm": "v0.17.0",
   "heyman/heynote": "v2.2.2",
@@ -20,5 +20,5 @@
   "Opencode-DCP/opencode-dynamic-context-pruning": "v3.0.0",
   "code-yeongyu/oh-my-opencode": "v3.11.2",
   "sgl-project/sglang": "v0.5.9",
-  "lobehub/lobehub": "v2.2.0-nightly.202603090627"
+  "lobehub/lobehub": "v2.1.40-canary.6"
 }
