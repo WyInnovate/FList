@@ -5,11 +5,11 @@
   "dbeaver/dbeaver": "26.0.0",
   "siyuan-note/siyuan": "v3.5.10",
   "CherryHQ/cherry-studio": "v1.7.24",
-  "vllm-project/vllm": "v0.17.0",
+  "vllm-project/vllm": "v0.17.1",
   "heyman/heynote": "v2.2.2",
   "sissbruecker/linkding": "v1.40.0",
   "blinko-space/blinko": "1.0.0-rc.1",
-  "labring/FastGPT": "v4.14.8",
+  "labring/FastGPT": "v4.14.8.2",
   "KaringX/karing": "v1.2.15.1806",
   "MartialBE/one-hub": "v0.14.23",
   "rime/weasel": "latest",
@@ -20,5 +20,5 @@
   "Opencode-DCP/opencode-dynamic-context-pruning": "v3.0.0",
   "code-yeongyu/oh-my-opencode": "v3.11.2",
   "sgl-project/sglang": "v0.5.9",
-  "lobehub/lobehub": "v2.1.40-canary.6"
+  "lobehub/lobehub": "v2.2.0-nightly.202603110621"
 }
